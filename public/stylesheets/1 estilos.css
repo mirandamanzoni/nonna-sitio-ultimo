@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Barrio&display=swap');
+
+/*Menù lateral*/
+h1 {
+	font-family: 'Barrio', cursive;
+	text-align: center;
+}
+
+h3 {
+	font-family: 'Dosis', sans-serif;
+	font-weight: bold;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.659);
+}
+
+h5 {
+	font-size: x-large;
+	font-weight: 600;
+	color: #000000;
+}
+
+#btn-menu {
+	z-index: 3;
+	display: none;
+
+}
+
+.container-menu {
+	z-index: 3;
+	position: absolute;
+	background: rgba(241, 174, 162, 0.566);
+	width: 100%;
+	min-height: 100%;
+	top: 0;
+	left: 0;
+	transition: all 500ms ease;
+	opacity: 0;
+	visibility: hidden;
+}
+
+#btn-menu:checked~.container-menu {
+	z-index: 3;
+	opacity: 1;
+	visibility: visible;
+}
+
+.cont-menu {
+	z-index: 3;
+	width: 100%;
+	max-width: 240px;
+	background: #f59b84e6;
+	height: 650px;
+	position: relative;
+	transition: all 500ms ease;
+	transform: translateX(-100%);
+}
+
+#btn-menu:checked~.container-menu .cont-menu {
+	transform: translateX(0%);
+}
+
+.cont-menu nav {
+	transform: translateY(15%);
+}
+
+.cont-menu nav a {
+	font-family: 'Dosis', sans-serif;
+	display: block;
+	text-decoration: none;
+	padding: 40px;
+	color: #000000;
+	border-left: 5px solid transparent;
+	transition: all 400ms ease;
+
+}
+
+.cont-menu nav a:hover {
+	border-left: 5px solid #d42a71b9;
+	background: #d83574;
+
+}
+
+.cont-menu label {
+	position: absolute;
+	right: 5px;
+	top: 10px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 18px;
+}
+
+body {
+	background-color: bisque;
+	scrollbar-width:none;
+}
+
+/*Fin de Menù lateral*/
+.carousel-item {
+	height: 350px;
+	padding: 50px;
+	vertical-align: top;
+	border-radius:27px 27px 27px 27px ;
+}
+
+.carousel-caption {
+	
+	font-weight: 700;
+	background-color: rgba(192, 158, 91, 0.864);
+	height: 100px;
+	width: 500px;
+	border-radius: 20px;
+	margin:0px auto
+}
+
